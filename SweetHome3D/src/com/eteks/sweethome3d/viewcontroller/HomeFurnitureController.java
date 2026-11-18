@@ -92,6 +92,7 @@ public class HomeFurnitureController implements Controller {
   private Float              proportionalDepth;
   private Float              height;
   private Float              proportionalHeight;
+  private Float              volume;
   private boolean            proportional;
   private Integer            color;
   private FurniturePaint     paint;
@@ -1446,6 +1447,7 @@ public class HomeFurnitureController implements Controller {
     private final float                width;
     private final float                depth;
     private final float                height;
+    private float                volume;
     private final Integer              color;
     private final HomeTexture          texture;
     private final HomeMaterial []      modelMaterials;
@@ -1467,6 +1469,7 @@ public class HomeFurnitureController implements Controller {
       this.width = piece.getWidth();
       this.depth = piece.getDepth();
       this.height = piece.getHeight();
+      this.volume = piece.getVolume();
       this.color = piece.getColor();
       this.texture = piece.getTexture();
       this.modelMaterials = piece.getModelMaterials();
